@@ -1,17 +1,4 @@
 #include <stdio.h>
-// 1. Faça um algoritmo que faz a multiplicação entre 2 números sem utilizar o
-// operador de multiplicação (*) ou qualquer outra função (Utilizar Soma).
-
-// 2. Faça um algoritmo que faz a potência a partir da base e expoente sem
-// utilizar o operador de multiplicação (*) ou qualquer outra função (Utilizar
-// Soma).
-
-// 3. Faça um algoritmo que faça o fatorial de um número sem utilizar qualquer
-// outra função e sem utilizar recursividade.
-
-// 4. Faça um algoritmo que faz o fatorial de um número sem utilizar o operador
-// de multiplicação (*) ou qualquer outra função e sem utilizar recursividade
-// (Utilizar Soma).
 
 void multiplicacao(int base, int mult) {
   int i = 0, soma = 0;
@@ -21,13 +8,6 @@ void multiplicacao(int base, int mult) {
   }
   printf("Multiplicacao %d\n", soma);
 }
-
-// 5 ^ 2 = 5 * 5
-// 5 ^ 3 = 5 * 5 * 5
-
-// 25 + 25 + 25 + 25 + 25
-
-// 25 + 25
 
 void potenciacao(int base, int exp) {
   int soma = 0, num = base;
@@ -65,10 +45,8 @@ void fatorialSemMultiplicacao(int base) {
     for (int y = 0; y < num; y++) {
       soma += base;
     }
-
     num--;
   }
-
   printf("Fatorial:%d\n", soma);
 }
 
